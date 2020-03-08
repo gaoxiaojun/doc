@@ -1,0 +1,8 @@
+Graph必须供类似Hashmap的Entry API，目的是为了Inplace Modify Node
+Node是个Trait，
+真正保存的是<Node, Use, Input> 三元组
+采用多次分配一次释放的存储策略， memory layout需要仔细思考下
+提供多种Level的视图，这是个非常规的，例如High-level/Mid-level/lower-level
+提供多种方便类，针对CommonOp，提供CommonOpBuiler, MachineOp-MachineOpBuiler，etc。。。
+
+一切是围绕Graph结构，Graph由Node，Edge组成，
